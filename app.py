@@ -59,7 +59,12 @@ print(f"Root Mean Squared Error:{rmse}")
 st.title("Transportation Demand Prediction")
 
 # Banner Image 
-st.image("2.png", use_column_width=True)
+from PIL import Image
+
+image = Image.open("2.png")
+# Resize the image while maintaining the aspect ratio
+image = image.resize((500, 300))  # Adjust width and height as needed
+st.image(image)
 
 
 
