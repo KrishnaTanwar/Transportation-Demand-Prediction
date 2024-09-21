@@ -56,6 +56,9 @@ print(f"Root Mean Squared Error:{rmse}")
 
 # Streamlit app
 
+st.set_page_config(layout="wide")
+
+
 st.title("Transportation Demand Prediction")
 
 # Banner Image 
@@ -63,7 +66,7 @@ from PIL import Image
 
 image = Image.open("2.png")
 # Resize the image while maintaining the aspect ratio
-image = image.resize((500, 300))  # Adjust width and height as needed
+image = image.resize((3000, 1000))  # Adjust the width and height as needed
 st.image(image)
 
 
