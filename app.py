@@ -66,7 +66,7 @@ from PIL import Image
 
 image = Image.open("2.png")
 # Resize the image while maintaining the aspect ratio
-image = image.resize((3000, 1000))  # Adjust the width and height as needed
+image = image.resize((3000, 100))  # Adjust the width and height as needed
 st.image(image)
 
 
